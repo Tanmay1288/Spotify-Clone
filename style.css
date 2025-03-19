@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #191414;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.side {
+  color: #1DB954;
+  width: 200px; 
+  height: 100px; 
+  position: fixed; 
+}
+
+.sidebar-nav {
+  background-color: #1DB954;
+  padding: 20px;
+  border-radius: 10px;
+  height: 70px; 
+}
+
+.sidebar-nav .logo {
+  width: 100%;
+  color: yellow;
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.sidebar-nav .logo img {
+  width: 100px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+}
+
+.sidebar-nav ul li {
+  padding: 10px 0;  
+}
+
+.sidebar-nav ul li a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;  
+  font-size: 18px;  
+  font-weight: 600;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease;  
+}
+
+.sidebar-nav ul li a:hover {
+  background-color: #191414;
+}
+
+.sidebar-nav ul li a i {
+  margin-right: 10px;  
+}
+
+.side {
+  color: #b7828a;
+  width: 200px;
+  height: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+}
+
+.down {
+  color: rgb(202, 103, 119);
+  width: 200px;
+  height: 230px;
+  position: fixed;
+  bottom: 100px;; 
+  right: ; 
+}
+
+.side-nav {
+  background-color: rgb(186, 171, 143); 
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%; 
+}
+
+.side-nav .log {
+  width: 100%;
+  color: yellow;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.side-nav .log img {
+  width: 100px;
+}
+
+.side-nav ul {
+  list-style: none;
+}
+
+.side-nav ul li {
+  padding: 10px 0;
+}
+
+.side-nav ul li a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.side-nav ul li a:hover {
+  background-color: #191414;
+}
+
+.side-nav ul li a i {
+  margin-right: 10px;
+}
+
+.create-playlist {
+  background-color: #1DB954;
+  padding: 30px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.side-scroll {
+  height: 100px;
+  overflow-y: auto;
+}
+
+.side-scroll:hover::-webkit-scrollbar-thumb {
+  background: transparent;
+  width: 10px;
+}
+
+.about ul li a {
+  width: 10px; 
+}
+
+.about ul {
+  list-style: none;
+}
+
+.about ul li {
+  padding-bottom: 5px;
+}
+
+.about {
+  padding: 5px;
+  margin-top: 25px;
+}
+
+.main-section {
+  margin-left: 200px;
+  background-color: #191414;
+  border-radius: 10px;
+  height: 100vh;
+}
+
+.main-section .top-nav {
+  padding: 20px 25px;
+  background: #1DB954;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.main-section .top-nav .prev-btn button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.main-section .top-nav .prev-btn button i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.top-nav .login-btn {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav .login-btn .singup {
+  color: white;
+  font-size: 20px;
+  font-weight: 600px; 
+  background-color: #191414;
+  margin-right: 10px; 
+  border-radius: 5px;
+  padding: 6px 10px;
+}
+
+.top-nav .login-btn .singup:hover {
+  color: #B3D9A2;
+}
+
+.top-nav .login-btn .login {
+  color: white;
+  font-size: 20px;
+  font-weight: 600px; 
+  background-color: #191414;
+  margin-right: 10px; 
+  border-radius: 5px;
+  padding: 6px 10px;
+}
+
+.top-nav .login-btn .login:hover {
+  color: #B3D9A2;
+}
+
+.spotify-playlist {
+  margin-top: 30px; 
+  padding: 0 20px;
+}
+
+.spotify-playlist h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.item {
+  width: calc(20% - 20px); 
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #2e2e2e;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.play-btn span {
+  color: white;
+  font-size: 24px;
+}
+
+h4 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+p {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
